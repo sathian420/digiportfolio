@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   
+
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skill</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="social">
+                <a href="https://www.youtube.com/watch?v=W6QL9yCT2YE"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/sathyan-m-53857b282/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/sathian42/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </nav>
+    </header>
+
+  <h1>Contact Us</h1>
+
+  <div class="contact">
+  <p>Click to save My number:</p>
+  <button><p class="phone-link" data-phone="8248773107">+91 8248773107</p></button>
+
+  <p>Click here to compose an email as pesonal:</p>
+  <button><p class="email-link" data-email="sathyan42@outlook.com">sathyan42@outlook.com</p></button>
+
+  <p>Click the email to compose an email as Professional:</p>
+  <button><p class="email-link" data-email="sathian100903@gmail.com">sathian100903@gmail.com</p></button>
+
+  </div>
+
+  <div class="address">
+    <h3>
+        Sathyan M<br>
+        makaneman avanue<br>
+        Appartment no 12c 3<br>
+        thirumullaivoyal<br>
+        Chennai - 627002<br>
+
+
+    </h3>
+  </div>
+
+
+  <div id="rot">
+    <img src="earth.png" alt="">
+  </div>
+
+
+
+  <script>
+    // Get all phone number elements by class
+    const phoneLinks = document.querySelectorAll(".phone-link");
+
+    // Add click event listeners to phone number elements
+    phoneLinks.forEach(phoneLink => {
+      phoneLink.addEventListener("click", function() {
+        const phoneNumber = phoneLink.getAttribute("data-phone");
+        window.location.href = "tel:" + phoneNumber;
+      });
+    });
+
+    // Get all email elements by class
+    const emailLinks = document.querySelectorAll(".email-link");
+
+    // Add click event listeners to email elements
+    emailLinks.forEach(emailLink => {
+      emailLink.addEventListener("click", function() {
+        const emailAddress = emailLink.getAttribute("data-email");
+        window.location.href = "mailto:" + emailAddress;
+      });
+    });
+  </script>
+
+ 
+</body>
+</html>
